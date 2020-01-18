@@ -7,8 +7,24 @@
 $doc-font-size: 14;
 
 $text-color: #444;
-$primary-color: orange;
+$primary-color: darkgoldenrod;
 $link-color: orange;
+
+.greedy-nav {
+  a {
+    color: $primary-color;
+    font-weight: 400;
+
+    &.site-title {
+      transition: font .3s;
+      &:hover, 
+      &:focus {
+        font-weight: 700;
+      }
+    }
+  
+  }
+}
 
 .archive__item {
   a {
