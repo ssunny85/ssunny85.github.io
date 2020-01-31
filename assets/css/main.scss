@@ -96,6 +96,10 @@ html {
       text-decoration: none;
     }  
   }
+
+  &__item-excerpt {
+    font-size: 0.9em;
+  }
 }
 
 // page
@@ -103,3 +107,17 @@ html {
   color: $primary-color;
 }
 
+// custom
+.text-link {
+  color: $primary-color-light;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: $primary-color-yellow;
+  }
+
+  &:visited {
+    color: $primary-color-light;
+  }
+}
