@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "en-US"
-title                    : "ssunny's Posts"
-title_separator          : "|"
+title                    : "Front End Posts"
+title_separator          : ":"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Park SunHee"
-description              : "Web FE Developer"
+name                     : "ssunny"
+description              : "Web Front End Development Posts"
 url                      : "https://ssunny85.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -107,10 +107,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Park SunHee"
+  name             : "ssunny"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Web Front End Developer"
+  location         : ""
   email            :
   links:
     - label: "Email"

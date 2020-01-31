@@ -4,24 +4,21 @@
 
 @charset "utf-8";
 
-
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-
 // variables
-$text-color: #444;
-$primary-color: darkgoldenrod;
-$link-color: orange;
-$small: 600px;
-$medium: 768px;
-$medium-wide: 900px;
-$large: 1024px;
-$x-large: 1280px;
-$max-width: $x-large;
+$text-color: $text-color;
+$primary-color-deep: #274B58;
+$primary-color-light: #6FB1B4;
+$primary-color: #3A727F;
+$primary-color-yellow: #F2D58F;
+$highlight-color: #F9ECD1;
 
 // reset
 html {
+  color: $text-color;
+
   @include breakpoint($medium) {
     font-size: 14px;
   }
@@ -38,28 +35,71 @@ html {
 // base
 .highlighter-rouge {
   font-size: 0.9em;
-  background: $base09;
+  background: $highlight-color;
+  color: $primary-color-deep;
+}
+
+// masthead
+.masthead {
+  border-bottom: 0 none;
+
+  &__inner-wrap {
+    padding: 4em 1em 2em;
+  }
 }
 
 // navigation
 .greedy-nav {
   a {
-    color: $primary-color;
-    font-weight: 400;
+    color: $primary-color-deep;
+    font-family: $monospace;
 
     &.site-title {
-      transition: font .3s;
+      font-weight: 700;
+      font-size: 22px;
+      transition: color .3s;
+
       &:hover, 
       &:focus {
-        font-weight: 700;
+        color: $primary-color-deep;
       }
     }
   }
 }
 
-// archive
-.archive__item {
-  a {
-    text-decoration: none;
+// sidebar
+.sidebar {
+  .author__name {
+    font-family: $monospace;
+    color: $primary-color-deep;
   }
 }
+
+// archive
+.archive {
+  margin-top: 0;
+
+  &__subtitle {
+    margin-top: 0;
+    margin-bottom: 1em;
+    padding-bottom: 0.8em;
+    font-family: $monospace;
+    font-size: 1.5em;
+    color: $primary-color-deep;
+  }
+
+  &__item-title {
+    a {
+      font-size: 1em;
+      font-weight: 400;
+      color: $primary-color;
+      text-decoration: none;
+    }  
+  }
+}
+
+// page
+.page__title {
+  color: $primary-color;
+}
+
