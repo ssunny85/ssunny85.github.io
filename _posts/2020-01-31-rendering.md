@@ -7,7 +7,7 @@ tags:
   - rendering
 ---
 
-html, css, javascript 문서를 통해 브라우저에 내용을 그려주는 것.
+html, css, javascript 문서를 통해 브라우저에 내용을 그려내는것을 말합니다.
 
 ## 렌더링 순서
 
