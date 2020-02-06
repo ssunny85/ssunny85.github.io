@@ -56,7 +56,7 @@ html, css, javascript 문서를 통해 브라우저에 내용을 그려내는것
 ### Reflow/Repaint에 영향을 주지 않는 속성
    transform, opacity, cursor, orphans, perspective 등
 
-[CSS Triggers 참고 URL: https://csstriggers.com/](https://csstriggers.com/){: .text-link}
+[CSS Triggers 참고 URL: https://csstriggers.com/](https://csstriggers.com/){: .text-link target="_blank"}
 
 * 예)
   하나의 Object 위치 변경 애니메이션을 만드는 경우 Layout 에 영향을 주는 position 속성을 이용하는 것보다 transform 속성을 이용하는 것이 더 자연스러운 효과를 줄 수 있다.
